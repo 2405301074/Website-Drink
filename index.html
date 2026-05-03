@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEON⚡SURGE | Unleash Your Energy</title>
+    <meta name="description" content="Premium energy drink for ultimate focus, stamina, and performance. Unleash your energy with NEON⚡SURGE." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">NEON<span>⚡</span>SURGE</a>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#flavors" class="nav-link">Flavors</a>
+          <a href="#shop" class="nav-link">Shop</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="cart-icon-btn" id="cartToggle" aria-label="Open Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- ─── HERO ─────────────────────────────────── -->
+      <section id="home" class="hero">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="hero-content">
+          <h1 class="hero-title animate-up">Unleash Your <span class="neon-text">Energy</span></h1>
+          <p class="hero-subtitle animate-up delay-1">The premium fuel for high performers. Zero sugar, absolute power.</p>
+          <div class="hero-buttons animate-up delay-2">
+            <a href="#shop" class="btn btn-primary">Buy Now</a>
+            <a href="#flavors" class="btn btn-secondary">Explore Flavors</a>
+          </div>
+        </div>
+        <div class="hero-image-container animate-in">
+          <img src="/assets/hero-can.png" alt="Neon Surge Energy Drink Can" class="hero-image parallax" data-speed="0.05"/>
+          <div class="product-glow"></div>
+        </div>
+      </section>
+
+      <!-- ─── ABOUT ──────────────────────────────────── -->
+      <section id="about" class="about reveal">
+        <div class="container about-grid">
+          <div class="about-image glass-panel">
+            <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1200" alt="High energy neon gym athlete"/>
+          </div>
+          <div class="about-text">
+            <h2>Fueling the <span class="neon-text-green">Future</span></h2>
+            <p>NEON⚡SURGE is more than just a drink; it's a catalyst for your potential. Crafted with natural caffeine, nootropics for laser focus, and essential vitamins to keep your stamina peaking.</p>
+            <ul class="benefits-list">
+              <li><span class="icon">⚡</span> Sustained Energy Release</li>
+              <li><span class="icon">🧠</span> Nootropic Brain Boost</li>
+              <li><span class="icon">🌿</span> 100% Natural Ingredients</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FLAVORS ────────────────────────────────── -->
+      <section id="flavors" class="flavors reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Find Your <span class="neon-text-blue">Frequency</span></h2>
+            <p>Experience our signature lineup of electric flavors.</p>
+          </div>
+          <div class="flavor-cards">
+            <div class="card glass-card">
+              <div class="card-glow glow-blue"></div>
+              <img src="/assets/flavor-blue.png" alt="Electric Blueberry" class="flavor-img"/>
+              <div class="card-content">
+                <h3>Electric Blue</h3>
+                <p>A crisp, shocking burst of blue raspberry and citrus.</p>
+                <a href="#shop" class="btn-sm btn-outline">Select</a>
+              </div>
+            </div>
+            <div class="card glass-card">
+              <div class="card-glow glow-green"></div>
+              <img src="/assets/flavor-green.png" alt="Cyber Lime" class="flavor-img"/>
+              <div class="card-content">
+                <h3>Cyber Lime</h3>
+                <p>Neon lime infused with a hint of cooling mint.</p>
+                <a href="#shop" class="btn-sm btn-outline">Select</a>
+              </div>
+            </div>
+            <div class="card glass-card">
+              <div class="card-glow glow-red"></div>
+              <img src="/assets/flavor-red.png" alt="Plasma Punch" class="flavor-img"/>
+              <div class="card-content">
+                <h3>Plasma Punch</h3>
+                <p>A volatile mix of tropical fruits and cherry.</p>
+                <a href="#shop" class="btn-sm btn-outline">Select</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FEATURES ──────────────────────────────── -->
+      <section class="features reveal">
+        <div class="container features-grid">
+          <div class="feature-box">
+            <div class="feature-icon">🚫</div>
+            <h4>Zero Sugar</h4>
+            <p>No crash, just clean burning energy all day.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">🧬</div>
+            <h4>B-Vitamin Complex</h4>
+            <p>Optimized formula to support cellular energy production.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">🚀</div>
+            <h4>Instant Boost</h4>
+            <p>Fast-acting formula gets you in the zone in minutes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── TESTIMONIALS ───────────────────────────── -->
+      <section class="testimonials reveal">
+        <div class="container">
+          <h2 class="text-center">The <span class="neon-text">Surge</span> Squad</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-card glass-panel">
+              <div class="stars">★★★★★</div>
+              <p>"Best pre-workout and late-night coding fuel. The focus is unreal and Cyber Lime tastes incredible."</p>
+              <div class="author">- Alex J., Software Engineer</div>
+            </div>
+            <div class="testimonial-card glass-panel">
+              <div class="stars">★★★★★</div>
+              <p>"Finally an energy drink that doesn't make me jittery. Smooth, clean energy that lasts through my entire shift."</p>
+              <div class="author">- Sarah M., ER Nurse</div>
+            </div>
+            <div class="testimonial-card glass-panel">
+              <div class="stars">★★★★★</div>
+              <p>"I've tried them all. NEON SURGE is the only one that actually delivers on its promises. 10/10."</p>
+              <div class="author">- David K., Pro Gamer</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── GALLERY ────────────────────────────────── -->
+      <section class="gallery reveal">
+        <div class="container" style="margin-bottom: 40px;">
+          <h2 class="text-center">Life on <span class="neon-text-green">Full Charge</span></h2>
+          <p class="text-center" style="color:var(--color-text-muted);margin-top:10px;">From the gym floor to the dance floor — NEON⚡SURGE fuels it all.</p>
+        </div>
+        <div class="gallery-container">
+          <img src="/assets/gallery-1.png"   alt="Gym Lifestyle"       class="gallery-img"/>
+          <img src="/assets/gallery-2.png"   alt="Nightlife"           class="gallery-img"/>
+          <img src="https://images.unsplash.com/photo-1621252179027-94459d278660?q=80&w=1200" alt="Premium Can Close-up" class="gallery-img"/>
+          <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1200" alt="Neon Gym Athlete"     class="gallery-img"/>
+          <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1200" alt="Cyberpunk City"        class="gallery-img"/>
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200" alt="Sports Performance"   class="gallery-img"/>
+        </div>
+      </section>
+
+      <!-- ─── SHOP ───────────────────────────────────── -->
+      <section id="shop" class="shop reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Secure Your <span class="neon-text">Supply</span></h2>
+          </div>
+          <div class="pricing-cards">
+            <div class="pricing-card glass-card" data-product-id="starter" data-product-name="Starter Pack" data-product-price="29.99">
+              <h3>Starter Pack</h3>
+              <div class="price">$29.99 <span>/ 12-pack</span></div>
+              <ul class="pricing-features">
+                <li>Pick 1 Flavor</li>
+                <li>Standard Shipping</li>
+              </ul>
+              <button class="btn btn-primary w-100 buy-btn">Add to Cart</button>
+            </div>
+            <div class="pricing-card glass-card popular" data-product-id="prosurge" data-product-name="Pro Surge" data-product-price="54.99">
+              <div class="badge">Most Popular</div>
+              <h3>Pro Surge</h3>
+              <div class="price">$54.99 <span>/ 24-pack</span></div>
+              <ul class="pricing-features">
+                <li>Mix &amp; Match Flavors</li>
+                <li>Free Priority Shipping</li>
+                <li>Free Sticker Pack</li>
+              </ul>
+              <button class="btn btn-primary w-100 buy-btn">Add to Cart</button>
+            </div>
+            <div class="pricing-card glass-card" data-product-id="monthly" data-product-name="Monthly Protocol" data-product-price="49.99">
+              <h3>Monthly Protocol</h3>
+              <div class="price">$49.99 <span>/ month</span></div>
+              <ul class="pricing-features">
+                <li>24-pack Delivered Monthly</li>
+                <li>10% Recurring Discount</li>
+                <li>Early Access to New Flavors</li>
+              </ul>
+              <button class="btn btn-outline w-100 buy-btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── CONTACT ────────────────────────────────── -->
+      <section id="contact" class="contact reveal">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <h2>Get in <span class="neon-text">Touch</span></h2>
+            <p>Have a question or want to partner with us? Drop a message below.</p>
+            <div class="social-links">
+              <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+              <a href="#" class="social-icon" aria-label="Twitter/X">X</a>
+              <a href="#" class="social-icon" aria-label="TikTok">TT</a>
+            </div>
+          </div>
+          <form class="contact-form glass-panel" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ─── FOOTER ────────────────────────────────────── -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="logo">NEON<span>⚡</span>SURGE</div>
+          <p>The premium fuel for high performers.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#flavors">Flavors</a>
+          <a href="#shop">Shop</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-legal">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refunds</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NEON SURGE ENERGY. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ─── CHATBASE CHATBOT WIDGET ───────────────────── -->
+    <!-- Toggle button -->
+    <button class="chat-fab" id="chatFab" aria-label="Open Support Chat">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </button>
+
+    <!-- Floating iframe panel -->
+    <div class="chat-panel glass-panel" id="chatPanel" aria-hidden="true">
+      <div class="chat-panel-header">
+        <div class="chat-panel-brand">
+          <span class="chat-dot"></span>
+          <span>Surge Support</span>
+        </div>
+        <button class="chat-panel-close" id="chatClose" aria-label="Close chat">✕</button>
+      </div>
+      <div class="chat-panel-body">
+        <iframe
+          id="chatbaseIframe"
+          src=""
+          data-src="https://www.chatbase.co/chatbot-iframe/veLTpUBdj1MkBveZ0TSJi"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          title="NEON SURGE Support Chat"
+          allow="microphone"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer glass-panel" id="cartDrawer" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <h3>🛒 Your Cart</h3>
+        <button class="cart-drawer-close" id="cartClose" aria-label="Close cart">✕</button>
+      </div>
+      <div class="cart-drawer-body" id="cartBody">
+        <div class="cart-empty" id="cartEmpty">
+          <div class="cart-empty-icon">🛒</div>
+          <p>Your cart is empty</p>
+          <a href="#shop" class="btn btn-sm btn-primary" id="cartShopLink">Browse Products</a>
+        </div>
+        <ul class="cart-items" id="cartItems"></ul>
+      </div>
+      <div class="cart-drawer-footer" id="cartFooter" style="display:none;">
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn btn-primary w-100" id="checkoutBtn">Checkout ⚡</button>
+        <button class="btn btn-outline w-100 cart-clear-btn" id="clearCartBtn">Clear Cart</button>
+      </div>
+    </aside>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">Added to cart! 🛒</div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
